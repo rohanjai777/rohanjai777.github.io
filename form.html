@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+      <link rel="stylesheet" href="styl.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+    </header>
+    <main id="form-outer">
+      <p id="description">Let us know your feedback</p>
+      <form class="form-1" action="" method="post">
+      <div class="row">
+        <div class="lable">
+          <label id= "name-lable" for="name">* Name</label>
+        </div>
+        <div class="input">
+          <input autofocus type="text" name="name" class="first" placeholder="Enter Your Name" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="lable">
+          <label id= "email-lable" for="email">* Email</label>
+        </div>
+        <div class="input">
+          <input type="email" name="email" class="first" placeholder="Enter Your Email" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="lable">
+          <label id= "number-lable" for="number">* Number</label>
+        </div>
+        <div class="input">
+          <input type="number" name="number" class="first" placeholder="Enter Your Number" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="lable">
+          <label id= "select-lable1" for="select-input1">Which option best describes your current role?</label>
+        </div>
+        <div class="input">
+          <select class="dropdown" name="select-input1">
+            <option disabled value>Select an option</option>
+            <option value="student">Student</option>
+            <option value="job">Full time job</option>
+            <option value="learner">Full time learner</option>
+            <option value="say">Prefer not to say</option>
+            <option value="others">others</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="lable">
+          <label id= "radio-lable" for="radio">* How likely is that you would recommend CBR Group to a friend?</label>
+        </div>
+        <div class="input" >
+          <ul style="list-style: none;">
+            <li class="radio"><label>Definitely <input type="radio" value="1" name="radio-button" class="user"></label></li>
+            <li class="radio"><label>Maybe <input type="radio" value="2" name="radio-button"  class="user"></label></li>
+            <li class="radio"><label>Not sure <input type="radio" value="3" name="radio-button"  class="user"></label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="lable">
+          <label id= "select-lable2" for="select-input2">Which option best describes your current role?</label>
+        </div>
+        <div class="input">
+          <select class="dropdown" name="select-input2">
+            <option disabled selected value>Select an option</option>
+            <option value="input">Select an Input</option>
+            <option value="challenges">Challenges</option>
+            <option value="project">Project</option>
+            <option value="community">Community</option>
+            <option value="open">openSource</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="lable">
+          <label id= "check-lable" for="check">Things that should be improved in the future<br> (Check all that apply): </label>
+        </div>
+        <div class="input" >
+          <ul style="list-style: none;">
+            <li class="checkbox"><label><input type="checkbox" value="1" name="check-button"  class="user">Front-end Projects </label></li>
+            <li class="checkbox"><label><input type="checkbox" value="2" name="check-button"  class="user">Back-end Projects </label></li>
+            <li class="checkbox"><label><input type="checkbox" value="3" name="check-button"  class="user">Data Visualization </label></li>
+            <li class="checkbox"><label><input type="checkbox" value="4" name="check-button"  class="user">Challenges </label></li>
+            <li class="checkbox"><label> <input type="checkbox" value="5" name="check-button"  class="user">Open Source Community</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="lable">
+          <label id= "last-lable" for="area">Any Comments or Suggestions?</label>
+        </div>
+        <div class="input">
+        <textarea name="area" rows="4" cols="40" placeholder="Enter your thoughts..."></textarea>
+        </div>
+      </div>
+      <button type="submit" name="button" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
